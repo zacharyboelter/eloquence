@@ -85,6 +85,9 @@ function isEven(n) {
         return 'True';
     } else if (n === 1) {
         return 'False'
+    } else if (n < 0) {
+        n = (n + 2);
+        return isEven(n);
     } else {
         n = (n - 2);
         return isEven(n);
