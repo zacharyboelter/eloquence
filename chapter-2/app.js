@@ -121,3 +121,20 @@ function countChar(s, char) {
     }
     return count;
 }
+
+/////////////////////////////////////////////////////
+// SUM OF RANGE && RANGE
+/////////////////////////////////////////////////////
+
+//function that takes two arguments, START and END, returning all nums from START to (and including) END.
+
+let array = [];
+
+function range(arr) {
+    let end = Math.max(arr[0], arr[1]);
+    let start = Math.min(arr[0], arr[1]);
+    for (let i = start; i <= end; i++){
+        array.push(i);
+    }
+    return array;
+}
