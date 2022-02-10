@@ -104,3 +104,12 @@ function countBs(str) {
     }
     return count;
 }
+
+function countChar(s, char) {
+    let count = 0;
+    for (let i = 0; i < s.length; i++){
+        if (s.charAt(i) === char)
+        count++;
+    }
+    return count;
+}
