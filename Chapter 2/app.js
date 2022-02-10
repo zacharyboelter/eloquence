@@ -67,14 +67,26 @@
 
 // RECURSIVE ODDS AND EVENS
 
-function odd_evenNum(num) {
-    if (num === 0) {
-        return (`${num} is even`);
-    } else if (num === 1) {
-        return (`${num} is odd`);
+// function odd_evenNum(num) {
+//     if (num === 0) {
+//         return (`${num} is even`);
+//     } else if (num === 1) {
+//         return (`${num} is odd`);
+//     } else {
+//         num = num - 2;
+//         return odd_evenNum(num);
+//     }
+// }
+
+// const even_oddNum = num => num % 2 === 0 ? "even" : "odd";
+
+function isEven(n) {
+    if (n === 0) {
+        return 'True';
+    } else if (n === 1) {
+        return 'False'
     } else {
-        num = num - 2;
-        return odd_evenNum(num);
+        n = (n - 2);
+        return isEven(n);
     }
 }
-
