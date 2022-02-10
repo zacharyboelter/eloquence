@@ -56,10 +56,25 @@
 
 // Math.min
 
-function min(x, y) {
-    if (x < y){
-      return x;
-    } else{
-      return y;
+// function min(x, y) {
+//     if (x < y){
+//       return x;
+//     } else{
+//       return y;
+//     }
+//   }
+
+
+// RECURSIVE ODDS AND EVENS
+
+function odd_evenNum(num) {
+    if (num === 0) {
+        return (`${num} is even`);
+    } else if (num === 1) {
+        return (`${num} is odd`);
+    } else {
+        num = num - 2;
+        return odd_evenNum(num);
     }
-  }
+}
+
